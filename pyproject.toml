@@ -1,0 +1,27 @@
+[project]
+name = "diffusion-simple"
+version = "0.1.0"
+description = "A tiny diffusion transformer (DiT) trained on MNIST"
+readme = "README.md"
+authors = [
+    { name = "Anish Kamatam", email = "anishkamatam22@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "matplotlib>=3.11.1",
+    "numpy>=2.5.1",
+    "torch>=2.13.0",
+    "tqdm>=4.70.0",
+]
+
+[build-system]
+requires = ["uv_build>=0.9.13,<0.10.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

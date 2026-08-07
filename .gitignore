@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+*.egg-info/
+
+# IDX files extracted from mnist-dataset.zip
+data/raw/
+
+# Generated figures
+outputs/
+
+# Trained model weights
+checkpoints/
+
+# Tooling
+.pytest_cache/
+.ruff_cache/
+.DS_Store
+.ipynb_checkpoints/
